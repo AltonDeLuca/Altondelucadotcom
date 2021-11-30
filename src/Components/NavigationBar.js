@@ -7,10 +7,10 @@ function NavigationBar() {
         <a href="./">HOME</a>
       </li>
       <li className={classes.link}>
-        <a href="./first">FIRST</a>
+        <a href="./pee">pee</a>
       </li>
       <li className={classes.link}>
-        <a href="./second">SECOND</a>
+        <a href="./poo">poo</a>
       </li>
     </ul>
   );
