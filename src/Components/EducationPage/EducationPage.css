@@ -1,0 +1,10 @@
+.logo {
+  max-width: 30%;
+  max-height: 2.5rem;
+}
+.subtitle {
+  display: flex;
+}
+.big {
+  list-style-type: none;
+}

@@ -26,9 +26,7 @@
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
-.container :last-child {
-  border-right: none;
-}
+
 .nav-links a {
   display: block;
   color: white;
@@ -41,7 +39,7 @@
 .navbarItems {
   background: linear-gradient(
     90deg,
-    rgb(110, 94, 354) 0%,
+    rgb(93, 94, 354) 0%,
     rgba(73, 63, 252, 100%)
   );
   display: flex;

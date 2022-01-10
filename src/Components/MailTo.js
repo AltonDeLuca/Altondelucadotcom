@@ -8,7 +8,7 @@ function Mailto({ email, subject = "", body = "", children }) {
 
   return (
     <a target="_top" href={`mailto:${email}${params}`}>
-      <EmailIcon fontsize="large" color="primary"></EmailIcon>
+      <EmailIcon fontSize="large" color="primary"></EmailIcon>
       {children}
     </a>
   );

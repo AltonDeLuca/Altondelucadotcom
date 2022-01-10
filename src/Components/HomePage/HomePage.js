@@ -1,0 +1,35 @@
+import ContactPage from "../ContactPage/ContactPage.js";
+import EducationPage from "../EducationPage/EducationPage.js";
+import ExperiencePage from "../ExperiencePage/ExperiencePage.js";
+
+import "./HomePage.css";
+
+function HomePage() {
+  return (
+    <div className="with-sidebar">
+      <div>
+        <div className="tile">
+          <h1 className="title">
+            <a href="/Experience">Experience</a>
+          </h1>
+          <ExperiencePage />
+        </div>
+        <div className="tile">
+          <h1 className="title">
+            <a href="/Education">Education</a>
+          </h1>
+          <EducationPage />
+        </div>
+      </div>
+
+      <div className="contact">
+        <div className="tile">
+          <h1 className="title alt">Contact Me</h1>
+          <ContactPage />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default HomePage;

@@ -29,6 +29,10 @@ function NavigationBar() {
           })}
         </ul>
       </nav>
+      <span className="banner">
+        This site is a work in progress! Please excuse any unfinished components
+        while I continue to work on this page! Thank you for visiting!
+      </span>
     </h1>
   );
 }
