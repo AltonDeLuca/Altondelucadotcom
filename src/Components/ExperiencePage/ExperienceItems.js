@@ -1,7 +1,7 @@
 export const ExperienceItems = [
   {
     Title: "Mobile QA Tester co-op | Invaluable LLC",
-    Descirption: [
+    Description: [
       "Manually tested mobile software across all platforms (Android, iOS, iPad)",
       "Wrote automated test suites for Android apps in Selenium and manually tested both front-end and back-end",
       "Collaborated with a team in an agile environment to regression test releases, using JIRA software to create bug reports, complete story tickets and write test cases",
@@ -11,7 +11,7 @@ export const ExperienceItems = [
   },
   {
     Title: "WIT Game Development Co-op",
-    Descirption: [
+    Description: [
       "Worked in a small team to develop an educational game incorporating fluid mechanics problems in collaboration with students and faculty from the School of Civil Engineering",
       "Developed game engine code as well as GUI design in Unity C#",
     ],

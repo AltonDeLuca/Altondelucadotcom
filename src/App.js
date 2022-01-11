@@ -5,8 +5,9 @@ import NavigationBar from "./Components/NavBar/NavigationBar";
 import ContactPage from "./Components/ContactPage/ContactPage";
 import EducationPage from "./Components/EducationPage/EducationPage";
 import ExperiencePage from "./Components/ExperiencePage/ExperiencePage";
-import Layout from "./Components/Layout/Layout";
 import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
+import LayoutSingleTile from "./Components/Layout/LayoutSingleTile";
+import LayoutSimpleContainer from "./Components/Layout/LayoutSimpleContainer";
 
 function App() {
   return (
@@ -15,19 +16,19 @@ function App() {
       <Routes>
         <Route
           path="/Projects"
-          element={<Layout content={<ProjectsPage />} />}
+          element={<LayoutSimpleContainer content={<ProjectsPage />} />}
         ></Route>
         <Route
           path="/Education"
-          element={<Layout content={<EducationPage />} />}
+          element={<LayoutSingleTile content={<EducationPage />} />}
         ></Route>
         <Route
           path="/Experience"
-          element={<Layout content={<ExperiencePage />} />}
+          element={<LayoutSingleTile content={<ExperiencePage />} />}
         ></Route>
         <Route
           path="/contact"
-          element={<Layout content={<ContactPage />} />}
+          element={<LayoutSingleTile content={<ContactPage />} />}
         ></Route>
         <Route path="/" element={<HomePage />}></Route>
       </Routes>

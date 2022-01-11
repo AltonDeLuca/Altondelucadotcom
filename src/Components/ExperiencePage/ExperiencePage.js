@@ -13,7 +13,7 @@ function ExperiencePage() {
               </span>
               <div className="bullet">
                 {/* {item.Descirption} */}
-                {item.Descirption.map((item2, index2) => {
+                {item.Description.map((item2, index2) => {
                   return <li key={index2}>{item2}</li>;
                 })}
               </div>
