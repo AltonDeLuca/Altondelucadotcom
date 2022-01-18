@@ -8,10 +8,14 @@ function EducationPage() {
         return (
           <li key={index}>
             <span className="subtitle">
-              <h1>{item.Title}</h1>
-              <img className="logo" src={item.img} alt={item.imgAlt}></img>
+              <img className="logo" src={item.img} alt={item.imgAlt} />
+              <h1 className="gradient__text">{item.Title}</h1>
             </span>
-            <p>{item.Descirption}</p>
+            <p className="text">
+              {item.Descirption.map((item2, index2) => {
+                return <li key={index2}>{item2}</li>;
+              })}
+            </p>
           </li>
         );
       })}

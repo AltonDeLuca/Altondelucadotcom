@@ -2,15 +2,18 @@ export const ProjectsList = [
   {
     title: "AltonDeluca.com (You are Here)",
     ghub: "https://github.com/AltonDeLuca/Altondelucadotcom",
-    lang: "",
-    description: ["", ""],
+    lang: "React.js",
+    description: [
+      "Pure front end React app to make an online resume",
+      "hosted on VPS configured with ubuntu and nginx",
+    ],
     img: "",
     imgAlt: "",
   },
   {
     title: "Discord Bot",
     ghub: "https://github.com/AltonDeLuca/BrickBot",
-    lang: "",
+    lang: "Node.js",
     description: [
       "Created in Node.JS, this bot implemented the node-schedule library to schedule daily messages, as well as Discord.js functionality to create commands that the bot would respond to",
       "Initially created in 2020, this project had to be reformatted and rebuilt almost entirely in 2021 with a new version of node.js and a new version of discord.js that rendered the old bot deprecated",
@@ -22,7 +25,7 @@ export const ProjectsList = [
   {
     title: "Arcade Basketball",
     ghub: "https://github.com/AltonDeLuca/ArcadeBasketball",
-    lang: "",
+    lang: "Unity C#",
     description: [
       "Created a 2D basketball shooting game in C#/Unity while managing an agile process",
       "Led the team including leading weekly standup meetings and assigning tasks to group members",
@@ -35,7 +38,7 @@ export const ProjectsList = [
   {
     title: "Rogue-Like Game",
     ghub: "https://github.com/AltonDeLuca/RogueLike_AI4G",
-    lang: "",
+    lang: "Unity C#",
     description: [
       "Developed a game that uses procedural content generation to randomly create maps, then allow the player to traverse them in a simple isometric style",
       "Wrote in unity using a marching squares algorithm in C# to generate smooth map meshes which would be used as playable levels and would be generated at game launch.",

@@ -10,7 +10,7 @@ export const ExperienceItems = [
     imgAlt: "Invaluable logo",
   },
   {
-    Title: "WIT Game Development Co-op",
+    Title: "Game Development Co-op | Wentworth Inst. of Tech.",
     Description: [
       "Worked in a small team to develop an educational game incorporating fluid mechanics problems in collaboration with students and faculty from the School of Civil Engineering",
       "Developed game engine code as well as GUI design in Unity C#",

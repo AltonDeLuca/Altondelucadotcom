@@ -9,7 +9,7 @@
   margin-right: 2rem;
 }
 .navbar-logo {
-  color: #fff;
+  color: #81afdd;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -17,12 +17,12 @@
 }
 
 .nav-links {
-  color: white;
+  color: #81afdd;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 .nav-links:hover {
-  background-color: #6d76f7;
+  background-color: #0b0f42;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
@@ -37,11 +37,41 @@
   background-color: #111;
 }
 .navbarItems {
-  background: linear-gradient(
-    90deg,
-    rgb(93, 94, 354) 0%,
-    rgba(73, 63, 252, 100%)
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 7% 22%,
+    rgba(2, 9, 100, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
   );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 7% 22%,
+    rgba(2, 9, 100, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 7% 22%,
+    rgba(2, 9, 100, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 7% 22%,
+    rgba(2, 9, 100, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 7% 22%,
+    rgba(2, 9, 100, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +114,7 @@
   }
 
   nav-links.hover {
-    background-color: #7577f8;
+    background-color: #0d0d38;
     border-radius: 0;
   }
 

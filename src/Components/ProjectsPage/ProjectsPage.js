@@ -4,13 +4,13 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 function ProjectsPage() {
   return (
     <div>
-      <h1 className="title">MY PROJECTS</h1>
+      <h1 className="title gradient__text">MY PROJECTS</h1>
       <ul>
         {ProjectsList.map((item, index) => {
           return (
-            <li key={index}>
+            <li className="text" key={index}>
               <div className="tile">
-                <span className="subtitle">
+                <span className="gradient__text subtitle">
                   <a href={item.ghub}>
                     <GitHubIcon fontSize="large" />
                   </a>
