@@ -8,8 +8,14 @@
   justify-content: end;
   margin-right: 2rem;
 }
+.fa-bars {
+  color: #ffffff;
+}
+.fa-times {
+  color: #ffffff;
+}
 .navbar-logo {
-  color: #81afdd;
+  color: #ffffff;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -17,12 +23,12 @@
 }
 
 .nav-links {
-  color: #81afdd;
+  color: #ffffff;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 .nav-links:hover {
-  background-color: #0b0f42;
+  background-color: #01020f;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
@@ -34,44 +40,10 @@
   padding: 14px 16px;
 }
 .nav-links a:hover {
-  background-color: #111;
+  background-color: white;
 }
 .navbarItems {
-  /* ff 3.6+ */
-  background: -moz-radial-gradient(
-    circle at 7% 22%,
-    rgba(2, 9, 100, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-radial-gradient(
-    circle at 7% 22%,
-    rgba(2, 9, 100, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-
-  /* opera 11.10+ */
-  background: -o-radial-gradient(
-    circle at 7% 22%,
-    rgba(2, 9, 100, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-
-  /* ie 10+ */
-  background: -ms-radial-gradient(
-    circle at 7% 22%,
-    rgba(2, 9, 100, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-
-  /* global 92%+ browsers support */
-  background: radial-gradient(
-    circle at 7% 22%,
-    rgba(2, 9, 100, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,6 +51,19 @@
 }
 .menu-icon {
   display: none;
+}
+.dropdown-item {
+  background-color: black !important;
+  font-size: inherit;
+}
+.dropdown-toggle {
+  font-size: inherit;
+}
+.nav-links :hover {
+  color: #0a58ca !important;
+}
+.nav-links > .btn-dd :hover {
+  background-color: black !important;
 }
 
 @media screen and (max-width: 960px) {
@@ -99,7 +84,7 @@
   }
 
   .nav-menu.active {
-    background: #6668f4;
+    background: #0b0f42;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -113,8 +98,8 @@
     display: table;
   }
 
-  nav-links.hover {
-    background-color: #0d0d38;
+  .nav-links.hover {
+    background-color: white;
     border-radius: 0;
   }
 

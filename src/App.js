@@ -8,6 +8,7 @@ import ExperiencePage from "./Components/ExperiencePage/ExperiencePage";
 import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
 import LayoutSingleTile from "./Components/Layout/LayoutSingleTile";
 import LayoutSimpleContainer from "./Components/Layout/LayoutSimpleContainer";
+import AlgosPage from "./Components/AlgosPage/Algos";
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
         <Route
           path="/contact"
           element={<LayoutSingleTile content={<ContactPage />} />}
+        ></Route>
+        <Route
+          path="/Algorithms"
+          element={<LayoutSimpleContainer content={<AlgosPage />} />}
         ></Route>
         <Route path="/" element={<HomePage />}></Route>
       </Routes>

@@ -1,10 +1,18 @@
 import "./NavigationBar.css";
 import { MenuItems } from "./MenuItems.js";
 import { useState } from "react";
+import ButtonWithDropDown from "../Buttons/ButtonDropDown";
+import { useNavigate } from "react-router-dom";
 
 function NavigationBar() {
   const [clicked, setClicked] = useState(false);
 
+  let Navigate = useNavigate();
+  const handleNav = (e) => {
+    let path = `/${e}`;
+    console.log(path);
+    Navigate(path);
+  };
   function handleClick() {
     setClicked(!clicked);
   }
@@ -27,12 +35,22 @@ function NavigationBar() {
               </li>
             );
           })}
+          <li key="projects">
+            <ButtonWithDropDown
+              data={["Projects", "Algorithms"]}
+              className="nav-links"
+              content="Projects"
+              variant="dark"
+              id="dropdown-basic-dark"
+              handleSelect={handleNav}
+            ></ButtonWithDropDown>
+          </li>
         </ul>
       </nav>
-      <span className="banner">
+      {/* <span className="banner">
         This site is a work in progress! Please excuse any unfinished components
         while I continue to work on this page! Thank you for visiting!
-      </span>
+      </span> */}
     </h1>
   );
 }

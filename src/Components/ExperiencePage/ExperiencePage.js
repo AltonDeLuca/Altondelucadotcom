@@ -9,15 +9,15 @@ function ExperiencePage() {
             <li key={index}>
               <span className="subtitle">
                 <img className="logo" src={item.img} alt={item.imgAlt} />
-                <h1 className="gradient__text">{item.Title}</h1>
+                <h1 className="">{item.Title}</h1>
               </span>
               <div className="bullet">
                 {/* {item.Descirption} */}
                 {item.Description.map((item2, index2) => {
                   return (
-                    <li className="text" key={index2}>
+                    <div className="text" key={index2}>
                       {item2}
-                    </li>
+                    </div>
                   );
                 })}
               </div>

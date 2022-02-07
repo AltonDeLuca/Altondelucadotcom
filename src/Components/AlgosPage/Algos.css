@@ -1,0 +1,52 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+canvas {
+  width: 400px;
+  height: 300px;
+  background-color: #84aed4;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+.nav-links > .btn {
+  background-color: black !important;
+  background-color: #84aed4;
+}
+.dropdown-menu > .btn-dd :hover {
+  background-color: white;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-container {
+  display: flex;
+  flex-direction: row;
+}
+.dropdown-toggle::after {
+  transform: translateY(10px);
+}
+.btn {
+  background-color: blue; /* blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+}
+button:focus:not(:focus-visible) {
+  box-shadow: none !important;
+}
+.btn-dd {
+  background-color: blue; /* Green */
+  border: none;
+  color: white;
+  padding: 5% 15%;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}

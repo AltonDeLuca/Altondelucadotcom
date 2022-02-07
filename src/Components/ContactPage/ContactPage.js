@@ -6,7 +6,7 @@ import "./ContactPage.css";
 function ContactPage() {
   return (
     <div>
-      <h1 className="gradient__text">ALTON DELUCA</h1>
+      <h1 className="">ALTON DELUCA</h1>
       <img src="" alt=""></img>
       <span className=" text row">
         My LinkedIn Page:

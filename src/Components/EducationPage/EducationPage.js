@@ -9,7 +9,7 @@ function EducationPage() {
           <li key={index}>
             <span className="subtitle">
               <img className="logo" src={item.img} alt={item.imgAlt} />
-              <h1 className="gradient__text">{item.Title}</h1>
+              <h1>{item.Title}</h1>
             </span>
             <p className="text">
               {item.Descirption.map((item2, index2) => {

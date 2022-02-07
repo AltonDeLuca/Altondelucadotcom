@@ -1,16 +1,17 @@
 import { ProjectsList } from "./ProjectsList";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import "./ProjectsPage.css";
 
 function ProjectsPage() {
   return (
-    <div>
-      <h1 className="title gradient__text">MY PROJECTS</h1>
+    <div className="nobottom">
+      <h1 className="title ">MY PROJECTS</h1>
       <ul>
         {ProjectsList.map((item, index) => {
           return (
             <li className="text" key={index}>
               <div className="tile">
-                <span className="gradient__text subtitle">
+                <span className=" subtitle">
                   <a href={item.ghub}>
                     <GitHubIcon fontSize="large" />
                   </a>
@@ -21,7 +22,7 @@ function ProjectsPage() {
                 <div className="bullet">
                   {/* {item.Descirption} */}
                   {item.description.map((item2, index2) => {
-                    return <li key={index2}>{item2}</li>;
+                    return <div key={index2}>{item2}</div>;
                   })}
                 </div>
               </div>
