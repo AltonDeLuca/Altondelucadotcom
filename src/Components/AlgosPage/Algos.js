@@ -71,7 +71,10 @@ function Algos() {
     swap(arr, i + 1, high);
     return i + 1;
   }
-  function quickSort(arr, low, high) {
+  async function quickSort(arr, low, high) {
+    setList(arr);
+    drawList();
+    await timeout(100);
     if (low < high) {
       // pi is partitioning index, arr[p]
       // is now at right place
@@ -83,8 +86,11 @@ function Algos() {
       quickSort(arr, pi + 1, high);
     }
   }
+  async function timeout(delay) {
+    return new Promise((res) => setTimeout(res, delay));
+  }
 
-  const handleSelect = (e) => {
+  const handleSelect = async (e) => {
     var n = stateList.length;
     var arr = stateList;
     switch (e) {
@@ -100,6 +106,7 @@ function Algos() {
             }
             setList(arr);
             drawList();
+            await timeout(5);
           }
         }
 
@@ -109,6 +116,7 @@ function Algos() {
         quickSort(arr, 0, n - 1);
         setList(arr);
         drawList();
+        await timeout(10);
         break;
       default:
         break;

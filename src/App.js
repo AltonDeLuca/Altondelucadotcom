@@ -21,7 +21,7 @@ function App() {
         ></Route>
         <Route
           path="/Education"
-          element={<LayoutSingleTile content={<EducationPage />} />}
+          element={<LayoutSimpleContainer content={<EducationPage />} />}
         ></Route>
         <Route
           path="/Experience"

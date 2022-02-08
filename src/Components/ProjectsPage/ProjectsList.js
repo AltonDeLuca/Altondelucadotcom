@@ -4,7 +4,7 @@ export const ProjectsList = [
     ghub: "https://github.com/AltonDeLuca/Altondelucadotcom",
     lang: "React.js",
     description: [
-      "Pure front end React app to make an online resume",
+      "Pure front end React app to make a responsive online resume",
       "hosted on VPS configured with ubuntu and nginx",
     ],
     img: "",
