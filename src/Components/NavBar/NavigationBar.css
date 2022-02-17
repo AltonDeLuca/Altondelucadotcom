@@ -4,10 +4,11 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 70vw;
+  width: 100vw;
   justify-content: end;
   margin-right: 2rem;
 }
+
 .fa-bars {
   color: #ffffff;
 }
@@ -27,11 +28,6 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
-.nav-links:hover {
-  background-color: #01020f;
-  border-radius: 4px;
-  transition: all 0.2s ease-out;
-}
 
 .nav-links a {
   display: block;
@@ -43,7 +39,7 @@
   background-color: white;
 }
 .container {
-  max-width: max-content !important;
+  max-width: 100% !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
@@ -64,8 +60,15 @@
 .dropdown-toggle {
   font-size: inherit;
 }
-.nav-links :hover {
+.dropdown-menu.show {
+  background-color: black;
+}
+.nav-links:hover {
   color: #0a58ca !important;
+  background-color: gray !important;
+  border-color: gray !important;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
 }
 .nav-links > .btn-dd :hover {
   background-color: black !important;
@@ -74,6 +77,9 @@
 @media screen and (max-width: 960px) {
   .navbarItems {
     position: relative;
+  }
+  .btn {
+    background-color: #0b0f42 !important;
   }
 
   .nav-menu {

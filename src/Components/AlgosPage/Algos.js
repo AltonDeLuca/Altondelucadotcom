@@ -74,7 +74,7 @@ function Algos() {
   async function quickSort(arr, low, high) {
     setList(arr);
     drawList();
-    await timeout(100);
+    await timeout(500);
     if (low < high) {
       // pi is partitioning index, arr[p]
       // is now at right place
@@ -116,7 +116,7 @@ function Algos() {
         quickSort(arr, 0, n - 1);
         setList(arr);
         drawList();
-        await timeout(10);
+        await timeout(5000);
         break;
       default:
         break;
@@ -169,7 +169,6 @@ function Algos() {
           content="Sort"
           data={ddContent}
           handleSelect={handleSelect}
-          //props={(handleSelect, ddContent)}
           className=""
           variant="flat"
           id="dropdown-basic-button"
@@ -178,7 +177,5 @@ function Algos() {
     </div>
   );
 }
-
-//() => setList(list.sort(() => Math.random() - 0.5))
 
 export default Algos;

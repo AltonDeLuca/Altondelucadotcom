@@ -2,16 +2,16 @@
 canvas {
   width: 400px;
   height: 300px;
-  background-color: #84aed4;
+  background-color: #838383;
   border: 1px solid #000000;
   border-radius: 4px;
 }
 .nav-links > .btn {
   background-color: black !important;
-  background-color: #84aed4;
+  background-color: #838383;
 }
 .dropdown-menu > .btn-dd :hover {
-  background-color: white;
+  background-color: black;
 }
 .center {
   display: flex;
@@ -27,15 +27,17 @@ canvas {
   transform: translateY(10px);
 }
 .btn {
-  background-color: blue; /* blue */
+  background-color: black; /* blue */
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: flex;
-  font-size: 16px;
+  /* display: flex; */
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
 }
+
 button:focus:not(:focus-visible) {
   box-shadow: none !important;
 }

@@ -2,6 +2,7 @@ import "./NavigationBar.css";
 import { MenuItems } from "./MenuItems.js";
 import { useState } from "react";
 import ButtonWithDropDown from "../Buttons/ButtonDropDown";
+import CustomToggle from "../Buttons/CustomToggle";
 import { useNavigate } from "react-router-dom";
 
 function NavigationBar() {
@@ -9,8 +10,12 @@ function NavigationBar() {
 
   let Navigate = useNavigate();
   const handleNav = (e) => {
-    let path = `/${e}`;
+    console.log(e);
+    let objectE = e.item;
+    console.log(objectE);
+    let path = `/${objectE}`;
     console.log(path);
+    setClicked(!clicked);
     Navigate(path);
   };
   function handleClick() {
@@ -36,6 +41,16 @@ function NavigationBar() {
             );
           })}
           <li key="projects">
+            <CustomToggle
+              data={["Projects", "Algorithms"]}
+              className="nav-links btn"
+              content="Projects"
+              variant="dark"
+              id="dropdown-basic-dark"
+              handleSelect={handleNav}
+            ></CustomToggle>
+          </li>
+          {/* <li key="projects">
             <ButtonWithDropDown
               data={["Projects", "Algorithms"]}
               className="nav-links"
@@ -44,7 +59,7 @@ function NavigationBar() {
               id="dropdown-basic-dark"
               handleSelect={handleNav}
             ></ButtonWithDropDown>
-          </li>
+          </li> */}
         </ul>
       </nav>
       {/* <span className="banner">

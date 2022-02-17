@@ -5,7 +5,8 @@ export const ProjectsList = [
     lang: "React.js",
     description: [
       "Pure front end React app to make a responsive online resume",
-      "hosted on VPS configured with ubuntu and nginx",
+      "Includes algorithms page demonstrating sorting algorithms with a visual display rendered with the canvas",
+      "includes github links to each project as well as detailed descriptions of each project's deliverables",
     ],
     img: "",
     imgAlt: "",
