@@ -12,11 +12,15 @@ function EducationPage() {
                 <img className="logo" src={item.img} alt={item.imgAlt} />
                 <h1>{item.Title}</h1>
               </span>
-              <p className="text">
+              <div className="bullet">
                 {item.Descirption.map((item2, index2) => {
-                  return <li key={index2}>{item2}</li>;
+                  return (
+                    <div className="text" key={index2}>
+                      {item2}
+                    </div>
+                  );
                 })}
-              </p>
+              </div>
             </li>
           );
         })}

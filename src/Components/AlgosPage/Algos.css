@@ -23,9 +23,6 @@ canvas {
   display: flex;
   flex-direction: row;
 }
-.dropdown-toggle::after {
-  transform: translateY(10px);
-}
 .btn {
   background-color: black; /* blue */
   border: none;

@@ -9,9 +9,4 @@ export const MenuItems = [
     url: "/Experience",
     cName: "nav-links btn",
   },
-  {
-    title: "Contact",
-    url: "/Contact",
-    cName: "nav-links btn",
-  },
 ];

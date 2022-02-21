@@ -21,6 +21,7 @@
   margin-left: 20px;
   cursor: pointer;
   font-size: smaller;
+  width: 50%;
 }
 
 .nav-links {
@@ -36,7 +37,15 @@
   padding: 14px 16px;
 }
 .nav-links a:hover {
-  background-color: white;
+  color: #0a58ca !important;
+}
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: gray !important;
+  color: #0a58ca !important;
 }
 .container {
   max-width: 100% !important;
@@ -129,5 +138,10 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+  }
+  ul {
+    padding-left: 0 !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 0 !important;
   }
 }

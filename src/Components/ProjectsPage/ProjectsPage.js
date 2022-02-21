@@ -10,7 +10,7 @@ function ProjectsPage() {
         {ProjectsList.map((item, index) => {
           return (
             <li className="text" key={index}>
-              <div className="tile">
+              <div className="tile wide">
                 <span className=" subtitle">
                   <a href={item.ghub}>
                     <GitHubIcon fontSize="large" />

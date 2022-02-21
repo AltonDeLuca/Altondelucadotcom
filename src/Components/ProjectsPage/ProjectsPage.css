@@ -1,3 +1,6 @@
 .nobottom {
   border: 1px transparent;
 }
+.wide {
+  width: 100%;
+}

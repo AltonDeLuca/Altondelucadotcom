@@ -1,7 +1,6 @@
 import "./NavigationBar.css";
 import { MenuItems } from "./MenuItems.js";
 import { useState } from "react";
-import ButtonWithDropDown from "../Buttons/ButtonDropDown";
 import CustomToggle from "../Buttons/CustomToggle";
 import { useNavigate } from "react-router-dom";
 
@@ -50,16 +49,6 @@ function NavigationBar() {
               handleSelect={handleNav}
             ></CustomToggle>
           </li>
-          {/* <li key="projects">
-            <ButtonWithDropDown
-              data={["Projects", "Algorithms"]}
-              className="nav-links"
-              content="Projects"
-              variant="dark"
-              id="dropdown-basic-dark"
-              handleSelect={handleNav}
-            ></ButtonWithDropDown>
-          </li> */}
         </ul>
       </nav>
       {/* <span className="banner">
