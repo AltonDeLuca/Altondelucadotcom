@@ -41,7 +41,7 @@ function NavigationBar() {
           })}
           <li key="projects">
             <CustomToggle
-              data={["Projects", "Algorithms"]}
+              data={["Projects", "Algorithms", "Currency"]}
               className="nav-links btn"
               content="Projects"
               variant="dark"

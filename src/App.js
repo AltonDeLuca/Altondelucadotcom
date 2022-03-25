@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import NavigationBar from "./Components/NavBar/NavigationBar";
@@ -9,8 +10,12 @@ import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
 import LayoutSingleTile from "./Components/Layout/LayoutSingleTile";
 import LayoutSimpleContainer from "./Components/Layout/LayoutSimpleContainer";
 import AlgosPage from "./Components/AlgosPage/Algos";
+import CurrencyPage from "./Components/CurrencyPage/CurrencyPage";
 
 function App() {
+  useEffect(() => {
+    document.title = "Alton DeLuca";
+  }, []);
   return (
     <div className="container">
       <NavigationBar className="App-header" />
@@ -34,6 +39,10 @@ function App() {
         <Route
           path="/Algorithms"
           element={<LayoutSimpleContainer content={<AlgosPage />} />}
+        ></Route>
+        <Route
+          path="/Currency"
+          element={<LayoutSimpleContainer content={<CurrencyPage />} />}
         ></Route>
         <Route path="/" element={<HomePage />}></Route>
       </Routes>
